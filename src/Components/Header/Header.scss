@@ -1,0 +1,30 @@
+.header-all-link {
+    .header-links {
+        margin-left: 10px;
+
+        &:hover {}
+    }
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: Source Sans Pro;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.hover-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #676464;
+    transition: width .3s;
+}
+
+.hover-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
